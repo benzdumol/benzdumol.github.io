@@ -1,0 +1,128 @@
+/* Mobile */
+body {
+	background: #fff;
+	color: #3b3f42;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-size: 1.4em;
+	font-style: normal;
+	font-weight: 300;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 500;
+	line-height: 1.4em;
+}
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.2em;
+}
+
+p {
+	line-height: 1.4em;
+	margin: 0.4em 0;
+}
+
+a {
+	color: #bc82ca;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #bc82ca;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+}
+
+::selection {
+	background: #bc82ca;
+	color: #fff;
+}
+
+.main {
+	margin: 0 auto;
+	padding: 1.6em;
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 170px;
+}
+
+.content--desktop {
+	display: none;
+}
+
+.content--heading {
+	font-size: 2em;
+	font-weight: 500;
+	line-height: 1.4em;
+}
+
+.content--row {
+	padding: 1.6em 0;
+}
+
+/* iPad */
+@media (min-width: 768px) {
+	.main {
+		padding: 0;
+	}
+
+	.header--mobile, .content--mobile, .footer--mobile {
+		display: none;
+	}
+
+	.content--desktop {
+		display: block;
+	}
+
+	.content {
+		display: block;
+	}
+
+	.content--left {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: 100vh;
+    }
+
+	.content--right {
+		float: right;
+		width: 50%;
+		z-index: 2;
+	}
+
+	.content--banner {
+		background: url(assets/profile.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.content--row {
+		padding: 1.6em 1.6em 0;
+	}
+
+	.content--row:last-child {
+		padding-bottom: 1.6em;
+	}
+
+	.content--text {
+		margin-top: 0;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+}
