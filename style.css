@@ -51,22 +51,12 @@ a:hover, a:active {
 	padding: 1.6em;
 }
 
-.content--avatar {
+.content__avatar {
 	border-radius: 50%;
 	width: 170px;
 }
 
-.content--desktop {
-	display: none;
-}
-
-.content--heading {
-	font-size: 2em;
-	font-weight: 500;
-	line-height: 1.4em;
-}
-
-.content--row {
+.content__about {
 	padding: 1.6em 0;
 }
 
@@ -76,23 +66,11 @@ a:hover, a:active {
 		padding: 0;
 	}
 
-	.content--mobile {
-		display: none;
-	}
-
-	.content--desktop {
-		display: block;
-	}
-
 	.content {
 		display: block;
 	}
 
-	.content--avatar {
-		display: none;
-	}
-
-	.content--left {
+	.content__left {
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -100,29 +78,33 @@ a:hover, a:active {
 		height: 100vh;
     }
 
-	.content--right {
+	.content__right {
 		float: right;
 		width: 50%;
 		z-index: 2;
 	}
 
-	.content--banner {
+	.content__banner {
 		background: url(assets/profile.JPG);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
-	.content--row {
+	.content__about {
+		margin-top: 0;
+	}
+
+	.content__avatar {
+		display: none;
+	}
+
+	.content__row {
 		padding: 1.6em 1.6em 0;
 	}
 
-	.content--row:last-child {
+	.content__row:last-child {
 		padding-bottom: 1.6em;
-	}
-
-	.content--text {
-		margin-top: 0;
 	}
 }
 
