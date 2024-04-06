@@ -26,16 +26,24 @@ h2, h3, h4, h5, h6 {
 
 p {
 	line-height: 1.4em;
-	margin: 0.4em 0;
+	margin: 1em 0;
+}
+
+p:first-child {
+	margin-top: 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
 }
 
 a {
-	color: #bc82ca;
+	color: #a95ebb;
 	text-decoration: none;
 }
 
 a:hover, a:active {
-	color: #bc82ca;
+	color: #8f44a2;
 	text-decoration: none;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
@@ -56,8 +64,44 @@ a:hover, a:active {
 	width: 170px;
 }
 
-.content__about {
-	padding: 1.6em 0;
+.content__row {
+	margin: 1.6em 0;
+}
+
+.content__heading {
+	margin-top: 0;
+}
+
+.content__footer {
+	margin-bottom: 0;
+}
+
+.content__socials {
+	display: inline-block;
+}
+
+.content__socials a {
+	margin: 0 0.2em;
+}
+
+.content__socials a:first-child {
+	margin-left: 0;
+}
+
+.content__socials a:last-child {
+	margin-right: 0;
+}
+
+.content__socials:hover a {
+    color: #e2cae8;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.content__socials a:hover {
+    color: #8f44a2;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
 }
 
 /* iPad */
@@ -81,7 +125,6 @@ a:hover, a:active {
 	.content__right {
 		float: right;
 		width: 50%;
-		z-index: 2;
 	}
 
 	.content__banner {
@@ -91,24 +134,16 @@ a:hover, a:active {
 		background-size: cover;
 	}
 
-	.content__about {
-		margin-top: 0;
-	}
-
 	.content__avatar {
 		display: none;
 	}
 
 	.content__row {
-		padding: 1.6em 1.6em 0;
+		margin: 0;
+		padding: 0 1.6em 1.6em;
 	}
 
-	.content__row:last-child {
-		padding-bottom: 1.6em;
+	.content__heading {
+		padding-top: 1.6em;
 	}
-}
-
-/* Desktop */
-@media (min-width: 1200px) {
-
 }
