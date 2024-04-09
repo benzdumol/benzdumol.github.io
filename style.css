@@ -104,6 +104,28 @@ a:hover, a:active {
     -webkit-transition: all 0.3s ease-out;
 }
 
+.content__text--404 {
+	color: #fff;
+	display: none;
+	font-weight: bold;
+	font-size: 5em;
+	padding: 0.1em 0 0 0.25em;
+}
+
+.content__logo--404 {
+	background-color: #bc82ca;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 4.5em;
+	font-weight: 600;
+	height: 170px;
+	width: 170px;
+}
+
+.content__logo--404 span {
+	padding: 0 55px;
+}
+
 /* iPad */
 @media (min-width: 1024px) {
 	.main {
@@ -134,8 +156,19 @@ a:hover, a:active {
 		background-size: cover;
 	}
 
-	.content__avatar {
+	.content__banner--404 {
+		background: #bc82ca;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.content__avatar, .content__logo--404 {
 		display: none;
+	}
+
+	.content__text--404 {
+		display: block;
 	}
 
 	.content__row {
